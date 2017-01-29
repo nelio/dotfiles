@@ -1,0 +1,28 @@
+[user]
+	name = My Name
+	email = nelio@example.com
+[alias]
+	tree = log --oneline --graph --color --decorate
+	cr = !git for-each-ref --format=\"%(upstream:short)\" \"$(git symbolic-ref HEAD)\"
+	st = status
+	ci = commit
+	br = branch
+	co = checkout
+	df = diff
+	lg = log
+	undo = reset --soft HEAD^
+    ru = remote update
+[color]
+	diff = auto
+	branch = auto
+	status = auto
+[branch]
+	autosetupmerge = true
+[push]
+	default = tracking
+[core]
+	editor = vim
+    excludesfile = /home/nelio/.gitignore_global
+[grep]
+    linenumber = true
+
